@@ -55,7 +55,7 @@ img {
 }
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -75,4 +75,19 @@ p {
     text-align: center;
     grid-area: 1/4/1/6;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+    
+    main {
+    grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media screen and (max-width: 750px){
+    
+    main {
+    grid-template-columns: repeat(1, 1fr);
+
+    }
 }
