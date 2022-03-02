@@ -77,13 +77,22 @@ p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1500px){
+    
+    main {
+    grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (max-width: 1150px){
     
     main {
     grid-template-columns: repeat(2, 1fr);
 
     }
 }
+
 @media screen and (max-width: 750px){
     
     main {
